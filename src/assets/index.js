@@ -46,7 +46,9 @@ import PP from "./PP.png";
 import ADS from "./ADS.png";
 import SKK from "./SKK.png";
 
-import MunchMates from "./MunchMates.png";
+import SmireAI from "./smireai.png";
+import Coras from "./coras.png";
+import scradit from "./scradit.png";
 import FileTransfer from "./File transfer.png";
 import Redactor from "./Redactor.png";
 import IRA from "./IRA.png";
@@ -102,7 +104,9 @@ export {
   PP,
   ADS,
   SKK,
-  MunchMates,
+  SmireAI,
+  Coras,
+  scradit,
   FileTransfer,
   Redactor,
   IRA,

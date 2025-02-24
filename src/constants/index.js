@@ -1,7 +1,6 @@
 import {
     mfit,
     mobile,
-    backend,
     creator,
     pytorch,
     web,
@@ -17,17 +16,12 @@ import {
     docker,
     UHG,
     auriga,
-    ISRO,
     Openai,
-    CG,
-    PP,
-    ADS,
-    SKK,
-    MunchMates,
-    FileTransfer,
+    SmireAI,
+    Coras,
+    scradit,
     Redactor,
     IRA,
-    UnRedactor,
   } from "../assets";
   
   export const navLinks = [
@@ -171,7 +165,7 @@ import {
   const testimonials = [
     {
       testimonial:
-        "His commitment to code and design skills are top-notch. He is a great asset to any team.",
+        "His commitment to develop and deliver are top-notch. He is a great asset to any team.",
       name: "Nikhil Jain",
       designation: "Director - Software Engineering",
       company: "United Health Group - Optum",
@@ -190,14 +184,26 @@ import {
     {
       name: "SMIRE",
       description:
-        " an engaging and community-driven platform where users can discover, review, and recommend local dining spots, enhancing their culinary experiences through shared insights and recommendations.",
+        "SMIRE AI is a Generative AI-powered medical assistant that provides users with health-related functionalities such as appointment booking, clinic/doctor search, medical news updates, OPD services, and emergency support. You can also talk through your past reports for insights and information. The system will leverage AI/ML models for intelligent responses and automation.",
       tags: [
         {
-          name: "CORAS",
+          name: "SMIRE",
           color: "blue-text-gradient",
         },
         {
-          name: "Wireframes",
+          name: "LLMs",
+          color: "green-text-gradient",
+        },
+        {
+          name: "FastAPI",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Next.js",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Docker",
           color: "green-text-gradient",
         },
         // {
@@ -205,23 +211,65 @@ import {
         //   color: "pink-text-gradient",
         // },
       ],
-      image: MunchMates,
+      image: SmireAI,
+      source_code_link: "",
+    },
+    {
+      name: "CORAS",
+      description:
+        "The Context-Based Intelligent Knowledge Retrieval System (CORAS) represents a sophisticated technological solution designed to address the complex challenges of extracting meaningful information from vast, unstructured document repositories. By leveraging advanced Retrieval-Augmented Generation (RAG) architecture, CORAS provides an innovative approach to intelligent knowledge retrieval across diverse document types like audio/video/text.",
+      tags: [
+        {
+          name: "CORAS",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "LLMs",
+          color: "green-text-gradient",
+        },
+        {
+          name: "FastAPI",
+          color: "green-text-gradient",
+        },
+        {
+          name: "React.js",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Docker",
+          color: "green-text-gradient",
+        },
+        // {
+        //   name: "tailwind",
+        //   color: "pink-text-gradient",
+        // },
+      ],
+      image: Coras,
       source_code_link: "",
     },
     
     {
       name: "RESILITREE",
       description:
-        "Developed a Python-based tool to automatically redact sensitive information from text documents, including names and customizable keywords removing sensitive information with 90%+ precision based on user-defined rule. Leveraged NLP (SpaCy) and regular expressions to accurately detect and replace confidential data, ensuring privacy compliance, increasing detection accuracy by 20% and reducing false positives by 35%. Built a full-stack web app using React.js, Node.js, and Express to allow users to upload, process, and visualize redacted documents in real time, including redaction statistics, word frequency insights, and interactive data visualizations.",
+        "RESILITREE is a disaster preparedness app that predicts treefall risk using image-based analysis and species-specific insights. It suggests preventive measures to stabilize trees and protect homes. The app also features an interactive Hurricane Relief Chatbot that provides real-time, context-aware guidance before, during, and after disasters, helping users stay safe and prepared.",
       tags: [
         {
-          name: "NLP",
+          name: "RESILITREE",
           color: "blue-text-gradient",
         },
         {
-          name: "React.js",
+          name: "Watson AI",
           color: "green-text-gradient",
         },
+        {
+          name: "FastAPI",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Streamlit",
+          color: "green-text-gradient",
+        },
+
         // {
         //   name: "tailwind",
         //   color: "pink-text-gradient",
@@ -233,10 +281,10 @@ import {
     {
       name: "KISSAN",
       description:
-        "This project is a web application that processes incident reports from PDFs, visualizes the data, and provides insights like clustering, bar graphs, pie charts, and statistics. The application is built using Flask and integrates with various Python libraries for data manipulation and visualization.",
+        "KISSAN is a farmer-assistance platform that recommends optimal crops based on demographics and climate data. We built a recommendation engine using annotated crop data and integrated a chatbot for user interaction. Successfully presented at the Smart India Hackathon, showcasing teamwork and technical expertise. **Tech Stack:** Python, Keras, Flask, K-Means Clustering.",
       tags: [
         {
-          name: "Flask",
+          name: "KISSAN",
           color: "blue-text-gradient",
         },
         {
@@ -245,53 +293,41 @@ import {
         },
         {
            name: "Pandas",
-           color: "pink-text-gradient",
+           color: "green-text-gradient",
        },
+       {
+        name: "Deep Learning",
+        color: "green-text-gradient",
+      },
       ],
       image: IRA,
       source_code_link: "",
     },
     {
-      name: "BIOGENE",
-      description:
-        "This project implements the Unredactor, a tool designed to predict redacted names from given contexts in text data. It uses machine learning techniques, including feature extraction and classification, to achieve this goal. The core pipeline involves preprocessing data, extracting features, training a model, and making predictions.",
-      tags: [
-        {
-          name: "Model Training & Prediction",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "Scikit-learn",
-          color: "green-text-gradient",
-        },
-        {
-           name: "Pandas",
-           color: "pink-text-gradient",
-       },
-      ],
-      image: UnRedactor,
-      source_code_link: "",
-    },
-    {
       name: "SCRADIT",
       description:
-        "Developed a 3D graphics rendering application using OpenGL, emphasizing parallax and normal mapping for realistic textures and light interactions, with features for real-time object manipulation and in-depth exploration of advanced 3D graphics principles.",
+        "Scradit, a platform to sell scrap in bulk and get online orders from nearby locations in real-time while maintaining full visibility of the market prices. Scradit is a full scrap management app solution covering the entire buying/selling pipeline, with an admin panel for step validation. Utilized Flutter, Dart, and Azure Cloud technologies.",
       tags: [
         {
-          name: "OpenGL",
+          name: "SCRADIT",
           color: "blue-text-gradient",
         },
         {
-          name: "C++",
+          name: "Flutter",
           color: "green-text-gradient",
         },
-        // {
-        //   name: "tailwind",
-        //   color: "pink-text-gradient",
-        // },
+        {
+          name: "Azure",
+          color: "green-text-gradient",
+      },
+      {
+        name: "FastAPI",
+        color: "green-text-gradient",
+    },
+
       ],
-      image: CG,
-      //source_code_link: "https://github.com/",
+      image: scradit,
+      source_code_link: "",
     },
   ];
   
