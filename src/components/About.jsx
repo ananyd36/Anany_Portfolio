@@ -48,7 +48,7 @@ const About = () => {
         I am Anany Sharma, an innovative AI/ML Engineer with a strong foundation in deep learning, computer vision, and NLP. Currently pursuing a Master’s in Artificial Intelligence Systems at the University of Florida, with a solid academic background in Computer Science from SRM Institute of Science and Technology.
         </p><br/>
         <p>
-        2.5+ years of industry experience at United Health Group (Optum), where I led AI-driven initiatives to optimize enterprise data workflows, reduce operational costs, and enhance automation. I specialize in developing multi-modal Retrieval-Augmented Generation (RAG) systems, OCR/NLP models, and ETL pipelines processing 10M+ claims monthly. Recognized with five Bravo! awards for outstanding performance.
+        3+ years of industry experience at United Health Group (Optum), where I led AI-driven initiatives to optimize enterprise data workflows, reduce operational costs, and enhance automation. I specialize in developing multi-modal Retrieval-Augmented Generation (RAG) systems, OCR/NLP models, and ETL pipelines processing 10M+ claims monthly. Recognized with five Bravo! awards for outstanding performance.
         </p><br/>
         <p>
           Some of my work are as follows:<br/><br/>
