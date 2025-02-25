@@ -119,10 +119,10 @@ import {
       iconBg: "#383E56",
       date: "February 2025 - Present",
       points: [
-        "Design and Curate curriculums for childrens for AI explainability",
-        "Design and Develop AI Learning intiatives for K-12",
-        "Train AI models and deploy using edge impulse.",
-        "Participating and showcasing research papers in AI conferences across US",
+        "Design and Curate curriculums for children for AI explainability.",
+        "Design and Develop AI Learning intiatives for kindergarten to 12-grade students.",
+        "Train AI models and deploy using edge impulse and Iot devices.",
+        "Participating and showcasing research papers in AI conferences across US.",
       ],
     },
     {
@@ -147,10 +147,8 @@ import {
       iconBg: "#383E56",
       date: "July 2020 - Nov 2020",
       points: [
-        "Create designs, concepts, and sample layouts based on knowledge of layout principles and esthetic design concepts.",
-        "Impressed with my commitment and Ideas, the contract was extended to grade 3 for an additional 6 books.",
-        "Emphasized Inclusive and Diverse Character Representation: One of my primary focuses in my work is ensuring that the content I create is representative and inclusive. By featuring diverse characters in the materials, I contribute to fostering a sense of belonging and understanding among the students.",
-      ],
+        "Worked on Data Extraction from Bank statements and other documents to automate the financial monitoring of accounts and Transactions using Natural Language Processing.",
+        "Created and annotated data by performing OCR, applying NER and POS tagging. Trained sequential machine learning model using CRF(Conditional Randon Fields).",      ],
     },
     {
       title: "Python Developer Intern",
