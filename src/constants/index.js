@@ -175,7 +175,7 @@ import {
 
     {
       testimonial:
-        "I have worked with Anany for two years and found him to be a quite dependable resource. Apart from his excellent technical and communication skills, Anany also has a keen eye for nuances that make him excel in complex organizational environmental / team dynamics. Excellent team player and is a real asset to any company that he works for. ",
+        "I have worked with Anany for about three years and found him to be a quite dependable resource. Apart from his excellent technical and communication skills, Anany also has a keen eye for nuances that make him excel in complex organizational environmental / team dynamics. Excellent team player and is a real asset to any company that he works for. ",
       name: "Rajat Kaushik",
       designation: "Software Engineering Manager",
       company: "United Health Group - Optum",
