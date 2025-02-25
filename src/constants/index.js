@@ -216,7 +216,7 @@ import {
         // },
       ],
       image: SmireAI,
-      source_code_link: "",
+      source_code_link: "https://github.com/ananyd36/SMIRE",
     },
     {
       name: "CORAS",
@@ -249,7 +249,7 @@ import {
         // },
       ],
       image: Coras,
-      source_code_link: "",
+      source_code_link: "https://github.com/ananyd36/CORAS",
     },
     
     {
@@ -280,7 +280,7 @@ import {
         // },
       ],
       image: Redactor,
-      source_code_link: "",
+      source_code_link: "https://github.com/ananyd36/ResiliTree",
     },
     {
       name: "KISSAN",
@@ -305,7 +305,7 @@ import {
       },
       ],
       image: IRA,
-      source_code_link: "",
+      source_code_link: "https://github.com/ananyd36/sih-20",
     },
     {
       name: "SCRADIT",
@@ -331,7 +331,7 @@ import {
 
       ],
       image: scradit,
-      source_code_link: "",
+      source_code_link: "https://scradit.com/",
     },
   ];
   
