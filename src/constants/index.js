@@ -119,10 +119,10 @@ import {
       iconBg: "#383E56",
       date: "February 2025 - Present",
       points: [
-        "Design and Curate curriculums for children for AI explainability.",
-        "Design and Develop AI Learning intiatives for kindergarten to 12-grade students.",
-        "Train AI models and deploy using edge impulse and Iot devices.",
-        "Participating and showcasing research papers in AI conferences across US.",
+        "Design and curate curriculums for children focused on applied AI explainability.",
+        "Develop and implement AI learning initiatives for kindergarten to 12th-grade students.",
+        "Train AI models and deploy them using Edge Impulse and IoT devices.",
+        "Present and showcase research papers at AI conferences across the U.S.",
       ],
     },
     {
