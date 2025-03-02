@@ -22,6 +22,7 @@ import {
     scradit,
     Redactor,
     IRA,
+    patent,
   } from "../assets";
   
   export const navLinks = [
@@ -183,6 +184,31 @@ import {
   ];
   
   const projects = [
+    {
+      name: "CROWDSAFE - PATENT",
+      description:
+        "Developed a YOLOv5-based multimodal PPE and mask detection system with high-risk crowd detection, leveraging Python, Flask, OpenCV, Darknet, and Docker scalability. Delivered real-time alerts and optimized performance using transfer learning and mAP evaluation.",
+      tags: [
+        {
+          name: "CROWDSAFE",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Deep Learning",
+          color: "green-text-gradient",
+        },
+        {
+           name: "Flask",
+           color: "green-text-gradient",
+       },
+       {
+        name: "Docker",
+        color: "green-text-gradient",
+      },
+      ],
+      image: patent,
+      source_code_link: "https://drive.google.com/drive/folders/1sS_KjACTDM9SKFZyf6LJItVUhxTW_sr6?usp=sharing",
+    },
     {
       name: "SMIRE",
       description:

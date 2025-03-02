@@ -56,9 +56,12 @@ import UnRedactor from "./Un Redactor.png";
 import UHG from './company/UHG.png';
 import mfit from './company/mfit.png';
 import auriga from './company/auriga.png';
+import patent from './Patent.png';
+
 
 
 export {
+  patent,
   pytorch,
   crewai,
   Openai,
