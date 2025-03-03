@@ -212,7 +212,7 @@ import {
     {
       name: "SMIRE",
       description:
-        "SMIRE AI is a Generative AI-powered medical assistant that provides users with health-related functionalities such as appointment booking, clinic/doctor search, medical news updates, OPD services, and emergency support. You can also talk through your past reports for insights and information. The system will leverage AI/ML models for intelligent responses and automation. Users will be able to log their dosage and track their progress. They will also be able to upload their reports and extract insights in real time.SMIRE AI is an AI-powered medical assistant that provides users with health-related functionalities such as appointment booking, clinic/doctor search, medical news updates, Consulatation services, and managing their medicine/reports/dosages. The system will leverage AI/ML models for intelligent responses and automation. Users will be able to log their dosage and track their progress. They will also be able to upload their reports and extract insights in real time.",
+        "SMIRE AI is an AI-powered medical assistant that provides users with health-related functionalities such as appointment booking, clinic/doctor search, medical news updates, Consulatation services, and managing their medicine/reports/dosages. The system will leverage AI/ML models for intelligent responses and automation. Users will be able to log their dosage and track their progress. They will also be able to upload their reports and extract insights in real time.",
       tags: [
         {
           name: "SMIRE",
