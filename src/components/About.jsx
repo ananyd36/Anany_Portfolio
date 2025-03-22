@@ -56,7 +56,7 @@ const About = () => {
           ✔ RESILITREE : A tree fall risk prediction model using CNNs and IBM Granite-13B chatbot integration.<br/>
           ✔ SCRADIT : A full-stack scrap management mobile app on Flutter & Azure.<br/><br/><br/>
 
-        Proficient in Python, Flask, FastAPI, Flutter, Angular, OpenAI, Azure AI Studio, SQL/NoSQL, Docker, and DevOps. Passionate about building scalable AI solutions that bridge technology and business needs.
+          Passionate about developing scalable AI solutions that align technology with business objectives. Proficient in machine learning frameworks such as TensorFlow, PyTorch, and scikit-learn, and experienced in cloud platforms like Microsoft Azure and Amazon Web Services (AWS). Adept at deploying models in Docker containers and familiar with Kubernetes for orchestration. Strong foundation in Natural Language Processing (NLP) and Deep Learning. Dedicated to continuous learning and improving the intersection of AI technology and real-world applications.
         </p><br/>
         <p>
         I continuously seek new technological challenges to learn and grow in this dynamic field.
