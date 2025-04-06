@@ -308,7 +308,7 @@ import {
     {
       name: "KISSAN",
       description:
-        "KISSAN is a farmer-assistance platform that recommends optimal crops based on demographics and climate data. We built a recommendation engine using annotated crop data and integrated a chatbot for user interaction. Successfully presented at the Smart India Hackathon, showcasing teamwork and technical expertise. **Tech Stack:** Python, Keras, Flask, K-Means Clustering.",
+        "KISSAN is a farmer-assistance platform that recommends optimal crops based on demographics and climate data. We built a recommendation engine using annotated crop data and integrated a chatbot for user interaction. Successfully presented at the Smart India Hackathon, showcasing teamwork and technical expertise. Tech Stack: Python, Keras, Flask, K-Means Clustering.",
       tags: [
         {
           name: "KISSAN",
