@@ -232,7 +232,7 @@ import {
       },
       ],
       image: emogen,
-      source_code_link: "https://github.com/ananyd36/project-3-graduate-ananyd36",
+      source_code_link: "https://github.com/UF-EGN6217-Spring25/project-3-ananyd36",
     },
     {
       name: "SMIRE",
