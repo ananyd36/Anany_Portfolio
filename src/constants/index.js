@@ -23,6 +23,7 @@ import {
     Redactor,
     IRA,
     patent,
+    emogen
   } from "../assets";
   
   export const navLinks = [
@@ -207,6 +208,31 @@ import {
       ],
       image: patent,
       source_code_link: "https://drive.google.com/drive/folders/1sS_KjACTDM9SKFZyf6LJItVUhxTW_sr6?usp=sharing",
+    },
+    {
+      name: "EMOGEN",
+      description:
+        "Fine-tuned OpenAI’s Whisper model for multilingual speech translation and transcription. Developed a CLIP-conditioned, fine-tuned Stable Diffusion model for generating contextually relevant images. Integrated HumeAI’s Emotion Detection API to infuse emotional context from speech into the image generation process.",
+      tags: [
+        {
+          name: "EMOGEN",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Deep Learning",
+          color: "green-text-gradient",
+        },
+        {
+           name: "Generative AI",
+           color: "green-text-gradient",
+       },
+       {
+        name: "Jupyter Notebook",
+        color: "green-text-gradient",
+      },
+      ],
+      image: emogen,
+      source_code_link: "https://github.com/ananyd36/project-3-graduate-ananyd36",
     },
     {
       name: "SMIRE",
