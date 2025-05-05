@@ -115,7 +115,7 @@ import {
   
   const experiences = [
     {
-      title: "OPS - EdgeAI Developer",
+      title: "Machine Learning Engineer Research Fellow",
       company_name: "University of Florida",
       icon: UF,
       iconBg: "#383E56",
