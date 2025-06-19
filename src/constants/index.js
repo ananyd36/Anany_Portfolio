@@ -23,7 +23,8 @@ import {
     Redactor,
     IRA,
     patent,
-    emogen
+    emogen,
+    headstarter,
   } from "../assets";
   
   export const navLinks = [
@@ -114,6 +115,20 @@ import {
   ];
   
   const experiences = [
+    {
+      title: "Software Engineering Fellow",
+      company_name: "HeadstarterAI",
+      icon: headstarter,
+      iconBg: "#383E56",
+      date: "June 2025 - Present",
+      points: [
+        "Building 14+ machine learning, ai-engineering and full-stack projects in fast-paced software team environments ",
+        "Developing 5+ neural networks in Python, 11 apps in Typescript on AWS/Vercel with dev and production environments",
+        "Implemented llm-chaning, hyperparameter tuning, fine tuning on 10+ LLM models controlling for latency & accuracy",
+        "Coached by Google Machine Learning, Google Kubernetes, Two Sigma, Tesla, Figma and Citadel Engineers",
+        "Aiming at implementing 321+ commits on github with 7-day deadlines getting a Career Capital increase of 60% from start date",
+      ],
+    },
     {
       title: "Machine Learning Engineer Research Fellow",
       company_name: "University of Florida",
