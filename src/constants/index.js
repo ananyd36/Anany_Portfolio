@@ -25,6 +25,8 @@ import {
     patent,
     emogen,
     headstarter,
+    aven,
+    tradeMCP,
   } from "../assets";
   
   export const navLinks = [
@@ -199,6 +201,64 @@ import {
   ];
   
   const projects = [
+    {
+      name: "Aven Insights",
+      description:
+        "Developed an AI customer support app for Aven with chat and voice functionality using Next.js, Gemini API, and RAG over a chunked knowledge base. Integrated a VAPI-powered voice agent and calendar scheduling. Solved challenges like inconsistent data, voice integration, and fallback handling for missing context.",
+      tags: [
+        {
+          name: "Aven Insights",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "AI Agent",
+          color: "green-text-gradient",
+        },
+        {
+           name: "Next.js",
+           color: "green-text-gradient",
+       },
+       {
+        name: "RAG",
+        color: "green-text-gradient",
+      },
+      {
+       name: "VAPI",
+        color: "green-text-gradient",
+      },
+      ],
+      image: aven,
+      source_code_link: "https://github.com/ananyd36/aven_insights_ai",
+    },
+    {
+      name: "Custom Trading MCP Server",
+      description:
+        "Built an AI-powered autonomous trading agent using a custom **MCP (Model Context Protocol)** server with **Next.js**, integrated with **Zerodha’s Kite API**. The system enables natural language-based trading, portfolio management, and real-time market analysis through tools like GitHub Copilot, minimizing manual effort and emotional decision-making.",
+      tags: [
+        {
+          name: "Trade_MCP",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "AI Agent",
+          color: "green-text-gradient",
+        },
+        {
+           name: "Next.js",
+           color: "green-text-gradient",
+       },
+       {
+        name: "MCP Server",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Vercel",
+        color: "green-text-gradient",
+      },
+      ],
+      image: tradeMCP,
+      source_code_link: "https://github.com/ananyd36/trade-mcp",
+    },
     {
       name: "CROWDSAFE - PATENT",
       description:

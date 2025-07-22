@@ -59,10 +59,14 @@ import auriga from './company/auriga.png';
 import patent from './Patent.png';
 import emogen from './emogen.png';
 import headstarter from './company/headstarter.jpg';
+import aven from './aven.png';
+import tradeMCP from './tradeMCP.png';
 
 
 
 export {
+  tradeMCP,
+  aven,
   emogen,
   patent,
   pytorch,
