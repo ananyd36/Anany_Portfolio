@@ -233,7 +233,7 @@ import {
     {
       name: "Custom Trading MCP Server",
       description:
-        "Built an AI-powered autonomous trading agent using a custom **MCP (Model Context Protocol)** server with **Next.js**, integrated with **Zerodha’s Kite API**. The system enables natural language-based trading, portfolio management, and real-time market analysis through tools like GitHub Copilot, minimizing manual effort and emotional decision-making.",
+        "Built an AI trading agent using a custom MCP (Model Context Protocol) server with Next.js, integrated with Zerodha’s Kite API. The system enables natural language-based trading, portfolio management, and real-time market analysis through tools like GitHub Copilot, minimizing manual effort and emotional decision-making.",
       tags: [
         {
           name: "Trade_MCP",
