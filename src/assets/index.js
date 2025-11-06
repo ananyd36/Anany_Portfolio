@@ -61,10 +61,12 @@ import emogen from './emogen.png';
 import headstarter from './company/headstarter.jpg';
 import aven from './aven.png';
 import tradeMCP from './tradeMCP.png';
+import infocepts from './company/infocepts.jpeg';
 
 
 
 export {
+  infocepts,
   tradeMCP,
   aven,
   emogen,

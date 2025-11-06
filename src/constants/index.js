@@ -27,6 +27,7 @@ import {
     headstarter,
     aven,
     tradeMCP,
+    infocepts,
   } from "../assets";
   
   export const navLinks = [
@@ -118,29 +119,16 @@ import {
   
   const experiences = [
     {
-      title: "Software Engineering Fellow",
-      company_name: "HeadstarterAI",
-      icon: headstarter,
-      iconBg: "#383E56",
-      date: "June 2025 - Present",
-      points: [
-        "Building 14+ machine learning, ai-engineering and full-stack projects in fast-paced software team environments ",
-        "Developing 5+ neural networks in Python, 11 apps in Typescript on AWS/Vercel with dev and production environments",
-        "Implemented llm-chaning, hyperparameter tuning, fine tuning on 10+ LLM models controlling for latency & accuracy",
-        "Coached by Google Machine Learning, Google Kubernetes, Two Sigma, Tesla, Figma and Citadel Engineers",
-        "Aiming at implementing 321+ commits on github with 7-day deadlines getting a Career Capital increase of 60% from start date",
-      ],
-    },
-    {
       title: "Machine Learning Engineer Research Fellow",
       company_name: "University of Florida",
       icon: UF,
       iconBg: "#383E56",
       date: "February 2025 - Present",
       points: [
-        "Design and curate curriculums for children focused on applied AI explainability.",
-        "Develop and implement AI learning initiatives for kindergarten to 12th-grade students on edge devices.",
-        "Train AI models and deploy them using Edge Impulse and IoT devices.",
+        "Optimizing SLM inference on Jetson Nano, conducting edge-cloud benchmarking to improve AI efficiency on the edge",
+        "Built and deployed 5+ edge AI pipelines on ESP32 MCU  integrating  light, motion, and ToF sensors with 90%+ accuracy",
+        "Reduced inference time by 50% (3 ms to 1.5ms.) via quantization (float32 to int8) on ESP32 MCU deployment",
+        "Designed hands-on AI curriculum to 100+ high school students, combining ML, sensors, and embedded systems",
       ],
     },
     {
@@ -150,12 +138,23 @@ import {
       iconBg: "#E6DEDD",
       date: "Jan 2022 - Aug 2024",
       points: [
-        "Spearheaded development of multi-modal RAG agents for real-time interaction with enterprise data and live knowledge article uploads. This increased efficiency of every stakeholder by almost 40%.",
-        "Developed POCs for OCR and NLP models to address business challenges like real time claim receipt validation and accurate information extraction to improve operational efficiency. This reduced the time and cost taken to adjudicate claims automatically by about 20%.",
-        "Built Power BI dashboards for real-time visualization of business performance and KPI tracking.",
-        "Reporting and Analytics: Spearheaded the development of approximately 1.5K reports biweekly through scheduler automation, covering key financial metrics for business continuity using MS BI (SSRS, SSIS, Power BI). Enhanced and maintained the Reporting UI interface on Angular and .NET for ad-hoc reporting.",
-        "ETL: Developed end-to-end ETL flow maps on IBM WTX to process over 10 million claims monthly. Deployed workflows on UNIX AIX Servers using shell scripts and utilized IBM messaging queues for rapid data transmission.",
-        "Achievements: Received 5 Bravo! awards in 2.5 years for performance recognition.",
+        "Engineered a RAG microservice using vector DB and Azure AI Search, enhancing retrieval speed and efficiency by 40%",
+        "Architected a claims validation service with Azure Document Intelligence, improving claim adjudication rate by 30%",
+        "Designed low-latency data pipelines for real-time KPI dashboards, reducing reporting latency by 40% using PowerBI ",
+        "Optimized reporting pipelines (SSIS/SSRS) to generate finance reports for 1.5K+ clients, to cut generation time by 20%",
+        "Architected high-volume ETL pipelines to process 10M+ monthly claims, focusing on data integrity and throughput",
+      ],
+    },
+        {
+      title: "Data Engineer",
+      company_name: "Infocepts",
+      icon: infocepts,
+      iconBg: "#383E56",
+      date: "March 2021 - Jan 2022",
+      points: [
+        "Optimized PySpark ETL pipelines on Amazon EMR to process 5TB+ monthly data, reducing batch runtime by 20%",
+        "Built custom Lambda functions with S3 triggers to ingest and preprocess data from 20+ client sources into EMR",
+        "Designed 10+ Airflow DAGs for incremental data loads, cutting ingestion latency by 40% and 99% SLA adherence",
       ],
     },
     {
@@ -165,8 +164,10 @@ import {
       iconBg: "#383E56",
       date: "July 2020 - Nov 2020",
       points: [
-        "Worked on Data Extraction from Bank statements and other documents to automate the financial monitoring of accounts and Transactions using Natural Language Processing.",
-        "Created and annotated data by performing OCR, applying NER and POS tagging. Trained sequential machine learning model using CRF(Conditional Randon Fields).",      ],
+        "Developed an NLP-powered financial data system with 85% field-extraction accuracy for transaction monitoring ",
+        "Engineered document extraction system supporting 10+ formats using hybrid NER and layout-aware frameworks",
+        "Built dynamic Conditional Random Field  plus Spatial model to parse financial statements across 4 major banks",
+      ],
     },
     {
       title: "Python Developer Intern",
