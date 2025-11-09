@@ -88,14 +88,14 @@ const Navbar = () => {
           {navLinks.map((nav) => (
             <li
               key={nav.id}
-              className={`${active === nav.title ? "text-white" : "text-secondary"} hover:text-white text-[18px] font-medium cursor-pointer`}
+              className={`${active === nav.title ? "text-white" : "text-white"} hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
           <li
-            className={`${active === "Resume" ? "text-white" : "text-secondary"} hover:text-white text-[18px] font-medium cursor-pointer`}
+            className={`${active === "Resume" ? "text-white" : "text-white"} hover:text-white text-[18px] font-medium cursor-pointer`}
             onClick={() => setShowModal(true)}
           >
             Resume
