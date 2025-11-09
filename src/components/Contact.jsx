@@ -5,6 +5,7 @@ import emailjs from "@emailjs/browser";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import { StarsCanvas } from "./canvas";
 
 const Contact = () => {
   const formRef = useRef();
@@ -156,6 +157,7 @@ const Contact = () => {
         >
           Instagram
         </a>
+        <StarsCanvas />
       </div>
 
     

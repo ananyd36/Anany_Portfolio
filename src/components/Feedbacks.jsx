@@ -3,6 +3,7 @@ import {styles} from '../styles';
 import {SectionWrapper } from '../hoc';
 import {fadeIn, textVariant} from '../utils/motion';
 import {testimonials} from '../constants';
+import {StarsCanvas} from './canvas';
 
 const FeedbacksCard = ({index, testimonial, name, designation, company, image}) => (
   <motion.div 
@@ -29,6 +30,7 @@ const FeedbacksCard = ({index, testimonial, name, designation, company, image}) 
 
 const Feedbacks = () => {
   return (
+    <>
     <div className = "mt-12 bg-black-100 rounded-[120px]">
       <div className = {`${styles.padding} bg-tertiary rounded-2xl min-h-[300px]`}>
         <motion.div variants={textVariant()}>
@@ -45,9 +47,12 @@ const Feedbacks = () => {
             {...testimonial}
           />
         ))}
+        
       </div>
 
     </div>
+    <StarsCanvas />
+    </>
   )
 }
 

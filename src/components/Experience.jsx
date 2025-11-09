@@ -7,6 +7,7 @@ import {styles} from '../styles';
 import { experiences } from "../constants";
 import {SectionWrapper} from '../hoc';
 import { textVariant } from "../utils/motion";
+ import {StarsCanvas} from './canvas';
 
 const ExperienceCard = ({experience}) => (
   <VerticalTimelineElement
@@ -64,7 +65,7 @@ const Experience = () => {
            <ExperienceCard key = {index} experience= {experience}/> 
           ))}
         </VerticalTimeline>
-
+<StarsCanvas />
       </div>
     </>
   )

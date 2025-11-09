@@ -1,12 +1,11 @@
 import React from 'react';
 import {Tilt} from 'react-tilt';
 import {motion} from 'framer-motion';
-import { EarthCanvas } from './canvas';
 import { styles } from '../styles';
 import { services } from '../constants';
 import {fadeIn, textVariant} from '../utils/motion';
 import { SectionWrapper } from '../hoc';
-import {Stars} from './canvas';
+import {StarsCanvas} from './canvas';
 
 
 const ServiceCard = ({index, title, icon}) => {
@@ -24,6 +23,7 @@ const ServiceCard = ({index, title, icon}) => {
         >
           <h3 className='text-white text-[20px] font-bold text-center'>{title}</h3>
         </div>
+
       </motion.div>
 
     </Tilt>
@@ -66,6 +66,7 @@ const About = () => {
         {services.map((service, index) => (<ServiceCard key={services.title} index = {index}{...service}/>))}
 
       </div>
+      <StarsCanvas />
 
     </>
   )
