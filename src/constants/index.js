@@ -119,7 +119,7 @@ import {
   
   const experiences = [
     {
-      title: "Machine Learning Engineer Research Fellow",
+      title: "AI Research Fellow",
       company_name: "University of Florida",
       icon: UF,
       iconBg: "#383E56",
