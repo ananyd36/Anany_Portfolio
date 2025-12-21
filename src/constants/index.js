@@ -125,9 +125,9 @@ import {
       iconBg: "#383E56",
       date: "February 2025 - Present",
       points: [
-        "Optimizing SLM inference on Jetson Nano, conducting edge-cloud benchmarking to improve AI efficiency on the edge",
-        "Built and deployed 5+ edge AI pipelines on ESP32 MCU  integrating  light, motion, and ToF sensors with 90%+ accuracy",
-        "Reduced inference time by 50% (3 ms to 1.5ms.) via quantization (float32 to int8) on ESP32 MCU deployment",
+        "Engineered an SLM on Jetson Orin, with a model footprint of 96MBs, exported using ONNX runtime and TensorRT",
+        "Optimized training/inference by KV Cache, mixed precision training, flash attention achieving 70T/s with 2.44ms TTFT",
+        "Built and deployed 5+ edge AI DNN models on ESP32  integrating light, motion, and ToF sensors with 90%+ accuracy",
         "Designed hands-on AI curriculum to 100+ high school students, combining ML, sensors, and embedded systems",
       ],
     },
@@ -138,11 +138,11 @@ import {
       iconBg: "#E6DEDD",
       date: "Jan 2022 - Aug 2024",
       points: [
-        "Engineered a RAG microservice using vector DB and Azure AI Search, enhancing retrieval speed and efficiency by 40%",
-        "Architected a claims validation service with Azure Document Intelligence, improving claim adjudication rate by 30%",
-        "Designed low-latency data pipelines for real-time KPI dashboards, reducing reporting latency by 40% using PowerBI ",
+        "Engineered a RAG system on Azure stack, leveraging reranking, query rewriting enhancing retrieval speed by 40%",
+        "Designed Power BI business KPI dashboards using Oracle SQL in DirectQuery with push-based data refresh.",
+        "Automated 1.5K+ biweekly financial reports using SSIS/SSRS with data validation and reconciliation workflows.",
         "Optimized reporting pipelines (SSIS/SSRS) to generate finance reports for 1.5K+ clients, to cut generation time by 20%",
-        "Architected high-volume ETL pipelines to process 10M+ monthly claims, focusing on data integrity and throughput",
+        "Architected ETL pipelines using IBM WTX, Oracle SQL to process 10M+ monthly claims on UNIX AIX servers.",
       ],
     },
         {
@@ -152,9 +152,9 @@ import {
       iconBg: "#383E56",
       date: "March 2021 - Jan 2022",
       points: [
-        "Optimized PySpark ETL pipelines on Amazon EMR to process 5TB+ monthly data, reducing batch runtime by 20%",
+        "Optimized PySpark ETL using partition pruning and columnar formats, processing 5TB+ data with 20% faster runtime.",
         "Built custom Lambda functions with S3 triggers to ingest and preprocess data from 20+ client sources into EMR",
-        "Designed 10+ Airflow DAGs for incremental data loads, cutting ingestion latency by 40% and 99% SLA adherence",
+        "Designed 5+ Airflow DAGs for incremental data loads, cutting ingestion latency by 40% and 99% SLA adherence",
       ],
     },
     {
@@ -164,7 +164,7 @@ import {
       iconBg: "#383E56",
       date: "July 2020 - Nov 2020",
       points: [
-        "Developed an NLP-powered financial data system with 85% field-extraction accuracy for transaction monitoring ",
+        "Developed an OCR/NLP enabled financial data system with 85% field-extraction accuracy for transaction monitoring ",
         "Engineered document extraction system supporting 10+ formats using hybrid NER and layout-aware frameworks",
         "Built dynamic Conditional Random Field  plus Spatial model to parse financial statements across 4 major banks",
       ],
