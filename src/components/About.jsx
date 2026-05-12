@@ -39,7 +39,39 @@ const About = () => {
         <p className = {styles.sectionSubText}>Introduction</p>
         <h2 className = {styles.sectionHeadText}>Overview</h2>
       </motion.div>
+      <motion.p 
+  variants={fadeIn("", "", 0.1, 1)} 
+  className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+>
+  <p>
+    I am Anany Sharma, an AI Engineer and Software Engineer currently pursuing a Master’s in Artificial Intelligence Systems at the University of Florida. I build scalable AI systems across LLMs, multimodal AI, Edge AI, and distributed data platforms.
+  </p>
 
+  <br />
+
+  <p>
+    I have 3+ years of industry experience across AI engineering, machine learning, and large scale data systems. Previously at United Health Group, I developed production RAG systems, ETL pipelines processing 10M+ monthly claims, and automated enterprise reporting workflows.
+  </p>
+
+  <br />
+
+  <p>
+    My recent work focuses on Small Language Models and Edge AI deployment. I engineered a 96MB SLM on Jetson Orin using ONNX Runtime and TensorRT, achieving 70 tokens/sec with optimized inference pipelines using KV cache and Flash Attention.
+  </p>
+
+  <br />
+
+  <p>
+    I enjoy building AI systems from research to production, including agentic workflows, multimodal learning, cloud deployment, and real time inference systems. My projects span healthcare AI, generative AI, forecasting systems, and computer vision applications.
+  </p>
+
+  <br />
+
+  <p>
+    Tech Stack: Python, PyTorch, TensorFlow, LangChain, Spark, Docker, Kubernetes, AWS, Azure, SQL, Airflow, and FastAPI.
+  </p>
+</motion.p>
+{/* 
 
       <motion.p variants = {fadeIn("","",0.1,1)} className = "mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] ">
         <p>
@@ -61,7 +93,7 @@ const About = () => {
         <p>
         I continuously seek new technological challenges to learn and grow in this dynamic field.
         </p><br/>
-      </motion.p>
+      </motion.p> */}
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (<ServiceCard key={services.title} index = {index}{...service}/>))}
 

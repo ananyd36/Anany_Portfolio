@@ -62,6 +62,7 @@ import headstarter from './company/headstarter.jpg';
 import aven from './aven.png';
 import tradeMCP from './tradeMCP.png';
 import infocepts from './company/infocepts.jpeg';
+import Oelrich from './company/Oelrich.jpeg';
 
 
 
@@ -124,4 +125,5 @@ export {
   IRA,
   UnRedactor,
   headstarter,
+  Oelrich,
 };
