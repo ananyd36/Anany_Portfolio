@@ -15,7 +15,6 @@ import {
     UF,
     docker,
     UHG,
-    auriga,
     Openai,
     SmireAI,
     Coras,
@@ -183,18 +182,6 @@ import {
         "Built dynamic Conditional Random Field  plus Spatial model to parse financial statements across 4 major banks",
       ],
     },
-    {
-      title: "Python Developer Intern",
-      company_name: "Auriga IT Consulting Pvt. Ltd.",
-      icon: auriga,
-      iconBg: "#E6DEDD",
-      date: "Dec 2018 - Jan 2019",
-      points: [
-          "Trained on learning key aspects of Python Programming Language",
-          "Trained on Backend Frameworks like Django/Flask/FastAPI",
-          "Developed and Deployed an end to end web application for E-Commerce Client."
-      ],
-    },
   ];
   
   const testimonials = [
@@ -226,7 +213,7 @@ import {
     {
       name: "Aven Insights",
       description:
-        "Developed an AI customer support app for Aven with chat and voice functionality using Next.js, Gemini API, and RAG over a chunked knowledge base. Integrated a VAPI-powered voice agent and calendar scheduling. Solved challenges like inconsistent data, voice integration, and fallback handling for missing context.",
+        "Built and shipped an AI customer support agent live on Aven's production website, serving a user base of 250K+ with 3-4K customer queries handled weekly. Built with Next.js, Gemini API, and RAG over a chunked knowledge base, with a VAPI-powered voice agent and calendar scheduling. Solved production challenges around inconsistent data, voice integration, and fallback handling for missing context.",
       tags: [
         {
           name: "Aven Insights",
@@ -255,7 +242,7 @@ import {
     {
       name: "Custom Trading MCP Server",
       description:
-        "Built an AI trading agent using a custom MCP (Model Context Protocol) server with Next.js, integrated with Zerodha’s Kite API. The system enables natural language-based trading, portfolio management, and real-time market analysis through tools like GitHub Copilot, minimizing manual effort and emotional decision-making.",
+        "Built a personal AI trading agent using a custom MCP (Model Context Protocol) server with Next.js, integrated with Zerodha's Kite API, that I actively use to manage my own portfolio end-to-end. Enables natural language-based trading, portfolio management, and real-time market analysis through tools like GitHub Copilot, minimizing manual effort and emotional decision-making.",
       tags: [
         {
           name: "Trade_MCP",
@@ -284,7 +271,7 @@ import {
     {
       name: "CROWDSAFE - PATENT",
       description:
-        "Developed a YOLOv5-based multimodal PPE and mask detection system with high-risk crowd detection, leveraging Python, Flask, OpenCV, Darknet, and Docker scalability. Delivered real-time alerts and optimized performance using transfer learning and mAP evaluation.",
+        "Developed a YOLOv5-based multimodal PPE and mask detection system with high-risk crowd detection, leveraging Python, Flask, OpenCV, Darknet, and Docker scalability. Patented and deployed campus-wide at my undergraduate university during the COVID-19 pandemic to monitor mask compliance and crowd density in real time.",
       tags: [
         {
           name: "CROWDSAFE",
@@ -334,7 +321,7 @@ import {
     {
       name: "SMIRE",
       description:
-        "SMIRE AI is an AI-powered medical assistant that provides users with health-related functionalities such as appointment booking, clinic/doctor search, medical news updates, Consulatation services, and managing their medicine/reports/dosages. The system will leverage AI/ML models for intelligent responses and automation. Users will be able to log their dosage and track their progress. They will also be able to upload their reports and extract insights in real time.",
+        "SMIRE AI is an AI-powered medical assistant that provides health-related functionalities such as appointment booking, clinic/doctor search, medical news updates, consultation services, and medicine/report/dosage tracking. Started as a personal project and now actively used by my extended family for conversational insights into their medical reports.",
       tags: [
         {
           name: "SMIRE",
@@ -367,7 +354,7 @@ import {
     {
       name: "CORAS",
       description:
-        "The Context-Based Intelligent Knowledge Retrieval System (CORAS) represents a sophisticated technological solution designed to address the complex challenges of extracting meaningful information from vast, unstructured document repositories. By leveraging advanced Retrieval-Augmented Generation (RAG) architecture, CORAS provides an innovative approach to intelligent knowledge retrieval across diverse document types like audio/video/text.",
+        "The Context-Based Intelligent Knowledge Retrieval System (CORAS) addresses the challenge of extracting meaningful information from vast, unstructured document repositories. Leveraging a Retrieval-Augmented Generation (RAG) architecture, CORAS indexed a multi-modal corpus of 1,000+ text, audio, and video documents, achieving .81 Recall@10 and .77 NDCG@10 on retrieval evaluation.",
       tags: [
         {
           name: "CORAS",
@@ -401,7 +388,7 @@ import {
     {
       name: "RESILITREE",
       description:
-        "RESILITREE is a disaster preparedness app that predicts treefall risk using image-based analysis and species-specific insights. It suggests preventive measures to stabilize trees and protect homes. The app also features an interactive Hurricane Relief Chatbot that provides real-time, context-aware guidance before, during, and after disasters, helping users stay safe and prepared.",
+        "RESILITREE is a disaster preparedness app that predicts treefall risk using image-based analysis and species-specific insights, achieving 88% classification accuracy across 500+ annotated tree images. It suggests preventive measures to stabilize trees and protect homes. The app also features an interactive Hurricane Relief Chatbot that provides real-time, context-aware guidance before, during, and after disasters, helping users stay safe and prepared.",
       tags: [
         {
           name: "RESILITREE",
@@ -431,7 +418,7 @@ import {
     {
       name: "KISSAN",
       description:
-        "KISSAN is a farmer-assistance platform that recommends optimal crops based on demographics and climate data. We built a recommendation engine using annotated crop data and integrated a chatbot for user interaction. Successfully presented at the Smart India Hackathon, showcasing teamwork and technical expertise. Tech Stack: Python, Keras, Flask, K-Means Clustering.",
+        "KISSAN is a farmer-assistance platform that recommends optimal crops based on demographics and climate data. Built a recommendation engine using K-Means clustering on annotated crop data, achieving 90%+ recommendation accuracy across 10+ crop types, and integrated a chatbot for user interaction. Successfully presented at the Smart India Hackathon. Tech Stack: Python, Keras, Flask, K-Means Clustering.",
       tags: [
         {
           name: "KISSAN",
@@ -456,7 +443,7 @@ import {
     {
       name: "SCRADIT",
       description:
-        "Scradit, a platform to sell scrap in bulk and get online orders from nearby locations in real-time while maintaining full visibility of the market prices. Scradit is a full scrap management app solution covering the entire buying/selling pipeline, with an admin panel for step validation. Utilized Flutter, Dart, and Azure Cloud technologies.",
+        "Scradit, a platform to sell scrap in bulk and get online orders from nearby locations in real-time while maintaining full visibility of the market prices. Scradit is a full scrap management app solution covering the entire buying/selling pipeline, with an admin panel for step validation. Live at scradit.com, onboarding 50+ scrap vendors and processing 200+ pickup requests in its early rollout. Utilized Flutter, Dart, and Azure Cloud technologies.",
       tags: [
         {
           name: "SCRADIT",

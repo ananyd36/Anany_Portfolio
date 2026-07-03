@@ -20,7 +20,6 @@ import typescript from "./tech/typescript.png";
 import UF from "./company/UF.png";
 import UHG from "./company/UHG.png";
 import mfit from "./company/mfit.png";
-import auriga from "./company/auriga.png";
 import headstarter from "./company/headstarter.jpg";
 import infocepts from "./company/infocepts.jpeg";
 import Oelrich from "./company/Oelrich.jpeg";
@@ -44,7 +43,6 @@ export {
   pytorch,
   crewai,
   Openai,
-  auriga,
   mfit,
   UHG,
   creator,
