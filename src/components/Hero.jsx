@@ -105,7 +105,7 @@ const Hero = () => {
               GitHub
             </a>
             <a
-              href="mailto:ananyd36.ms@gmail.com"
+              href="mailto:anany.sharma.ufl@gmail.com"
               className="text-white-100 hover:text-[#dba039] text-[14px] font-medium underline underline-offset-4 transition"
             >
               Email
