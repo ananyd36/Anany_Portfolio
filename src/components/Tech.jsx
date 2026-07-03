@@ -2,7 +2,6 @@ import React from "react";
 
 import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
-import { StarsCanvas } from "./canvas";
 const Tech = () => {
   return (
     <div className='flex flex-row flex-wrap justify-center gap-6'>
@@ -24,7 +23,6 @@ const Tech = () => {
           />
         </div>
       ))}
-      <StarsCanvas />
     </div>
   );
 };

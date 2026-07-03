@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import lapseVideo from "../assets/videos/lapse_video.mp4";
+import heroPoster from "../assets/herobg-poster.jpg";
+import resumePdf from "../resume/Anany_Resume.pdf";
 
 
 const TypewriterText = ({ texts }) => {
@@ -36,7 +38,6 @@ const TypewriterText = ({ texts }) => {
 
   return (
     <div className="typewriter-container">
-      {/* <p className="typewriter-text mt-2" style={{ color: 'white', fontSize: '1.25rem' }}> */}
       <p className = {`${styles.heroSubText} mt-2 text-white-100`}>
         I am {displayText}
         {isTyping && <span className="typewriter-cursor">|</span>}
@@ -62,25 +63,54 @@ const Hero = () => {
         muted
         loop
         playsInline
+        poster={heroPoster}
+        preload="auto"
       >
         <source src={lapseVideo} type="video/mp4" />
       </video>
       <div
         className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5 z-10`}
       >
-        {/* <div className="flex flex-col justify-center items-center mt-5">
-            <div className="w-5 h-5 rounded-full bg-[#915eff] "/>
-            <div className='w-1 sm:h-80 h-40 violet-gradient' />
-        </div>  */}
-
-        
-
         <div>
-          {/* <h1 className = {`${styles.heroHeadText} text-white`}>Hi, I'm <span className="text-[#915eff]">Anany</span></h1> */}
           <h1 className = {`${styles.heroHeadText} text-white`}>Hi, I'm <span className="text-[#dba039]">Anany</span></h1>
-          {/* <p className = {`${styles.heroSubText} mt-2 text-white-100`}>I am a Software developer <br className = "sm:block hidden"/>and a Graphic designer</p> */}
           <TypewriterText texts={textOptions} />
-      
+
+          <p className="mt-4 max-w-xl text-white-100 text-[15px] sm:text-[17px] leading-[26px]">
+            I build production LLM, RAG, and Edge AI systems &mdash; MS in Artificial
+            Intelligence Systems @ University of Florida.
+          </p>
+
+          <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-3">
+            <a
+              href={resumePdf}
+              download="Anany_Sharma_Resume.pdf"
+              className="px-5 py-2.5 rounded-full bg-[#dba039] text-black font-semibold text-[14px] hover:opacity-90 transition"
+            >
+              Download Resume
+            </a>
+            <a
+              href="https://www.linkedin.com/in/ananyd36/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white-100 hover:text-[#dba039] text-[14px] font-medium underline underline-offset-4 transition"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="https://github.com/ananyd36"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white-100 hover:text-[#dba039] text-[14px] font-medium underline underline-offset-4 transition"
+            >
+              GitHub
+            </a>
+            <a
+              href="mailto:ananyd36.ms@gmail.com"
+              className="text-white-100 hover:text-[#dba039] text-[14px] font-medium underline underline-offset-4 transition"
+            >
+              Email
+            </a>
+          </div>
         </div>
 
       </div>
@@ -89,7 +119,7 @@ const Hero = () => {
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center z-10"> 
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
-            <motion.dev
+            <motion.div
               animate = {{
                 y: [0, 24, 0]
               }}

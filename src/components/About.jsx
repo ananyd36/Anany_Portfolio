@@ -5,7 +5,6 @@ import { styles } from '../styles';
 import { services } from '../constants';
 import {fadeIn, textVariant} from '../utils/motion';
 import { SectionWrapper } from '../hoc';
-import {StarsCanvas} from './canvas';
 
 
 const ServiceCard = ({index, title, icon}) => {
@@ -39,8 +38,8 @@ const About = () => {
         <p className = {styles.sectionSubText}>Introduction</p>
         <h2 className = {styles.sectionHeadText}>Overview</h2>
       </motion.div>
-      <motion.p 
-  variants={fadeIn("", "", 0.1, 1)} 
+      <motion.div
+  variants={fadeIn("", "", 0.1, 1)}
   className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
 >
   <p>
@@ -70,7 +69,7 @@ const About = () => {
   <p>
     Tech Stack: Python, PyTorch, TensorFlow, LangChain, Spark, Docker, Kubernetes, AWS, Azure, SQL, Airflow, and FastAPI.
   </p>
-</motion.p>
+</motion.div>
 {/* 
 
       <motion.p variants = {fadeIn("","",0.1,1)} className = "mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] ">
@@ -95,10 +94,9 @@ const About = () => {
         </p><br/>
       </motion.p> */}
       <div className='mt-20 flex flex-wrap gap-10'>
-        {services.map((service, index) => (<ServiceCard key={services.title} index = {index}{...service}/>))}
+        {services.map((service, index) => (<ServiceCard key={service.title} index = {index}{...service}/>))}
 
       </div>
-      <StarsCanvas />
 
     </>
   )

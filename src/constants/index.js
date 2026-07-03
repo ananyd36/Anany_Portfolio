@@ -126,34 +126,34 @@ import {
       iconBg: "#383E56",
       date: "February 2025 - Present",
       points: [
-        "Engineered an SLM on Jetson Orin, with a model footprint of 96MBs, exported using ONNX runtime and TensorRT",        		
+        "Engineered an SLM on Jetson Orin, with a model footprint of 96MBs, exported using ONNX runtime and TensorRT",
         "Optimized training/inference by KV Cache, mixed precision training, flash attention achieving 70T/s with 2.44ms TTFT",
-	      "Engineered a volatility-aware TCN + attention model to hyper-locally forecast PM2.5 air quality across 5+ years of data",
-	      "Built an Edge ML pipeline on ESP32-S3 via a compressed DL model(Pytorch to C byte array) with a  Huber loss of 0.26."
-        ],
+        "Engineered a volatility-aware TCN + attention model to hyper-locally forecast PM2.5 air quality across 5+ years of data",
+        "Built an Edge ML pipeline on ESP32-S3 via a compressed DL model(Pytorch to C byte array) with a Huber loss of 0.26."
+      ],
     },
-        {
-      title: "AI Engineer Intern ",
+    {
+      title: "AI Engineer Intern",
       company_name: "Oelrich Construction",
       icon: Oelrich,
       iconBg: "#E6DEDD",
       date: "Aug 2025 - April 2026",
       points: [
-       "Built a RAG system on Azure, with hybrid search (semantic+BM25), reranking, query expansion for retrieval accuracy	",
-        "Created ingestion pipelines to sync Azure VM (F: Drive) data into embedded vectorized records into Azure PostgreSQL	",
-        "Designed an LLM evaluation framework using DeepEval, integrating unit tests, LLM-as-a-Judge scoring, and A/B testing ",
+        "Built a RAG system on Azure, with hybrid search (semantic+BM25), reranking, query expansion for retrieval accuracy",
+        "Created ingestion pipelines to sync Azure VM (F: Drive) data into embedded vectorized records into Azure PostgreSQL",
+        "Designed an LLM evaluation framework using DeepEval, integrating unit tests, LLM-as-a-Judge scoring, and A/B testing",
         "Achieved .74 Recall@Top10, .78 NDCG@Top10 with an F1 Score of .82 across all failure mode in DeepEval evaluation"
-],
+      ],
     },
     {
       title: "Software Engineer - Data & AI",
-      company_name: "United Heatlh Group",
+      company_name: "United Health Group",
       icon: UHG,
       iconBg: "#E6DEDD",
       date: "Jan 2022 - Aug 2024",
       points: [
-        "Engineered a RAG system with Azure Blob Storage as knowledge base and Azure AI Search for indexing and retrieval		",
-        "Improved retrieval Recall@10 by 12% via semantic chunking for logical data partitioning, query rewriting and re-ranking		",
+        "Engineered a RAG system with Azure Blob Storage as knowledge base and Azure AI Search for indexing and retrieval",
+        "Improved retrieval Recall@10 by 12% via semantic chunking for logical data partitioning, query rewriting and re-ranking",
         "Designed Power BI business KPI dashboards using Oracle SQL in DirectQuery with push-based data refresh",
         "Automated 1.5K+ biweekly financial reports using SSIS/SSRS with data validation and reconciliation workflows",
         "Architected end to end ETL pipelines using IBM WTX, Oracle SQL to process 10M+ monthly claims on UNIX AIX servers"

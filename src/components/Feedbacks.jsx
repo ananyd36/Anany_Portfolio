@@ -3,7 +3,6 @@ import {styles} from '../styles';
 import {SectionWrapper } from '../hoc';
 import {fadeIn, textVariant} from '../utils/motion';
 import {testimonials} from '../constants';
-import {StarsCanvas} from './canvas';
 
 const FeedbacksCard = ({index, testimonial, name, designation, company, image}) => (
   <motion.div 
@@ -42,7 +41,7 @@ const Feedbacks = () => {
       <div className={`${styles.paddingX} -mt-20 pb-14 flex flex-wrap gap-7`}>
         {testimonials.map((testimonial, index) => (
           <FeedbacksCard
-            key={testimonials.name}
+            key={testimonial.name}
             index={index}
             {...testimonial}
           />
@@ -51,7 +50,6 @@ const Feedbacks = () => {
       </div>
 
     </div>
-    <StarsCanvas />
     </>
   )
 }

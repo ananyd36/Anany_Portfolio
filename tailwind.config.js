@@ -25,9 +25,6 @@ export const theme = {
     screens: {
       xs: "450px",
     },
-    backgroundImage: {
-      "hero-pattern": "url('/src/assets/jarvis2.4.png')",
-    },
   },
 };
 export const plugins = [];
