@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
+  <rect width="800" height="1000" fill="#8B5CF6"/>
+  <g transform="translate(400,340)">
+    <rect x="-110" y="-110" width="220" height="220" rx="0" fill="#FFFFFF" stroke="#000000" stroke-width="8"/>
+    <rect x="-60" y="-60" width="120" height="120" rx="0" fill="#8B5CF6" stroke="#000000" stroke-width="6"/>
+    <g stroke="#000000" stroke-width="8" stroke-linecap="square">
+      <line x1="-150" y1="-70" x2="-110" y2="-70"/>
+      <line x1="-150" y1="0" x2="-110" y2="0"/>
+      <line x1="-150" y1="70" x2="-110" y2="70"/>
+      <line x1="150" y1="-70" x2="110" y2="-70"/>
+      <line x1="150" y1="0" x2="110" y2="0"/>
+      <line x1="150" y1="70" x2="110" y2="70"/>
+      <line x1="-70" y1="-150" x2="-70" y2="-110"/>
+      <line x1="0" y1="-150" x2="0" y2="-110"/>
+      <line x1="70" y1="-150" x2="70" y2="-110"/>
+      <line x1="-70" y1="150" x2="-70" y2="110"/>
+      <line x1="0" y1="150" x2="0" y2="110"/>
+      <line x1="70" y1="150" x2="70" y2="110"/>
+    </g>
+  </g>
+  <text x="400" y="620" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="64" fill="#FFFFFF" text-anchor="middle">EDGE</text>
+  <text x="400" y="700" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="64" fill="#FFFFFF" text-anchor="middle">SLM</text>
+  <text x="400" y="760" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="28" fill="#000000" text-anchor="middle">JETSON ORIN &#183; RASPBERRY PI</text>
+</svg>

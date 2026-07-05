@@ -33,7 +33,7 @@ const About = () => {
         className="mt-4 max-w-3xl flex flex-col gap-4 font-sans text-nb-body text-[16px] leading-[1.7]"
       >
         <p>
-          I am Anany Sharma, an AI Engineer and Software Engineer currently pursuing a Master&rsquo;s in Artificial Intelligence Systems at the University of Florida. I build scalable AI systems across LLMs, multimodal AI, Edge AI, and distributed data platforms.
+          I am Anany Sharma, an AI Engineer and Software Engineer with a Master&rsquo;s in Artificial Intelligence Systems from the University of Florida. I build scalable AI systems across LLMs, multimodal AI, Edge AI, and distributed data platforms.
         </p>
 
         <p>

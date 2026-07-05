@@ -6,10 +6,7 @@ import {
     web,
     crewai,
     typescript,
-    html,
-    css,
     reactjs,
-    tailwind,
     git,
     Python,
     UF,
@@ -28,6 +25,23 @@ import {
     tradeMCP,
     infocepts,
     Oelrich,
+    edgeSlm,
+    hyperlocalAqi,
+    tensorflow,
+    langchain,
+    kubernetes,
+    apachespark,
+    apacheairflow,
+    fastapi,
+    postgresql,
+    anthropic,
+    cursor,
+    huggingface,
+    scikitlearn,
+    aws,
+    azure,
+    rag,
+    vectordb,
   } from "../assets";
   
   export const navLinks = [
@@ -69,52 +83,29 @@ import {
   ];
   
   const technologies = [
-    {
-      name: "Generative AI",
-      icon: Openai,
-    },
-    {
-      name: "Artificial Intelligence",
-      icon: crewai,
-    },
-    {
-      name: "Pytorch",
-      icon: pytorch,
-    },
-    {
-      name: "Python",
-      icon: Python,
-    },
-    {
-      name: "HTML 5",
-      icon: html,
-    },
-    {
-      name: "CSS 3",
-      icon: css,
-    },
-
-    {
-      name: "TypeScript",
-      icon: typescript,
-    },
-    {
-      name: "React JS",
-      icon: reactjs,
-    },
-    {
-      name: "Tailwind CSS",
-      icon: tailwind,
-    },
-    {
-      name: "Docker",
-      icon: docker,
-    },
-    {
-      name: "Github",
-      icon: git,
-    },
-
+    { name: "Generative AI", icon: Openai },
+    { name: "PyTorch", icon: pytorch },
+    { name: "TensorFlow", icon: tensorflow },
+    { name: "RAG", icon: rag },
+    { name: "LangChain", icon: langchain },
+    { name: "CrewAI", icon: crewai },
+    { name: "Hugging Face", icon: huggingface },
+    { name: "Vector Databases", icon: vectordb },
+    { name: "scikit-learn", icon: scikitlearn },
+    { name: "Python", icon: Python },
+    { name: "AWS", icon: aws },
+    { name: "Azure", icon: azure },
+    { name: "Kubernetes", icon: kubernetes },
+    { name: "Docker", icon: docker },
+    { name: "Apache Spark", icon: apachespark },
+    { name: "Apache Airflow", icon: apacheairflow },
+    { name: "FastAPI", icon: fastapi },
+    { name: "PostgreSQL", icon: postgresql },
+    { name: "Claude", icon: anthropic },
+    { name: "Cursor", icon: cursor },
+    { name: "Git", icon: git },
+    { name: "React JS", icon: reactjs },
+    { name: "TypeScript", icon: typescript },
   ];
   
   const experiences = [
@@ -210,6 +201,64 @@ import {
   ];
   
   const projects = [
+    {
+      name: "Edge SLM Deployment",
+      description:
+        "Engineered and deployed a compressed Small Language Model to the edge across NVIDIA Jetson Orin and Raspberry Pi, achieving a 96MB model footprint exported via ONNX Runtime and TensorRT. Optimized inference with KV cache, mixed precision training, and flash attention, achieving 70 tokens/sec with a 2.44ms time-to-first-token.",
+      tags: [
+        {
+          name: "Edge AI",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "SLM",
+          color: "green-text-gradient",
+        },
+        {
+          name: "NVIDIA Jetson",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Raspberry Pi",
+          color: "green-text-gradient",
+        },
+        {
+          name: "ONNX / TensorRT",
+          color: "green-text-gradient",
+        },
+      ],
+      image: edgeSlm,
+      source_code_link: "https://github.com/ananyd36",
+    },
+    {
+      name: "Hyperlocal Air Quality Forecasting",
+      description:
+        "Built a volatility-aware TCN + attention model to hyper-locally forecast PM2.5 air quality for Alachua County using 5+ years of historical data. Deployed a compressed edge ML pipeline on ESP32-S3 (PyTorch model compiled to a C byte array) with real-time sensor data ingestion into InfluxDB for continuous historical data collection, achieving a Huber loss of 0.26.",
+      tags: [
+        {
+          name: "Edge AI",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "ESP32-S3",
+          color: "green-text-gradient",
+        },
+        {
+          name: "InfluxDB",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Time Series",
+          color: "green-text-gradient",
+        },
+        {
+          name: "PyTorch",
+          color: "green-text-gradient",
+        },
+      ],
+      image: hyperlocalAqi,
+      source_code_link: "https://github.com/ananyd36",
+    },
     {
       name: "Aven Insights",
       description:
