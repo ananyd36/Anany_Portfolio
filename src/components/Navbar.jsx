@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import {  menu, close } from "../assets";
 
 import sdeResume from '../resume/Anany_Resume.pdf';
 import uxResume from '../resume/Cover_Letter_Anany_Sharma.pdf';
@@ -12,20 +11,10 @@ import uxResume from '../resume/Cover_Letter_Anany_Sharma.pdf';
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const modalRef = useRef();
 
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      if (scrollTop > 100) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-
     const handleClickOutside = (event) => {
       if (modalRef.current && !modalRef.current.contains(event.target)) {
         setShowModal(false);
@@ -36,10 +25,8 @@ const Navbar = () => {
     };
 
     document.addEventListener("mousedown", handleClickOutside);
-    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
@@ -54,7 +41,7 @@ const Navbar = () => {
       resumeUrl = uxResume;
       filename = 'Cover_Letter_Anany_Sharma.pdf';  // Proper filename
     }
-  
+
     const link = document.createElement("a");
     link.href = resumeUrl;
     link.setAttribute('download', filename);  // Use the proper filename here
@@ -63,11 +50,11 @@ const Navbar = () => {
     document.body.removeChild(link);
     setShowModal(false);
   };
-  
+
 
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 ${scrolled ? "bg-black" : "bg-transparent"}`}
+      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-nb-bg border-b-2 border-nb-border`}
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <Link
@@ -78,51 +65,59 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-            Anany Sharma &nbsp;
-            <span className='sm:block hidden'> | Portfolio </span>
+          <p className='font-head text-nb-heading text-[16px] sm:text-[18px] cursor-pointer flex items-center'>
+            Anany Sharma
+            <span className='sm:block hidden font-sans font-normal text-nb-body text-[16px] ml-2'>| Portfolio</span>
           </p>
         </Link>
 
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
+        <ul className='list-none hidden sm:flex flex-row items-center gap-8'>
           {navLinks.map((nav) => (
             <li
               key={nav.id}
-              className={`${active === nav.title ? "text-white" : "text-white"} hover:text-white text-[18px] font-medium cursor-pointer`}
+              className={`font-sans font-semibold text-[16px] text-nb-heading cursor-pointer hover:underline underline-offset-4 decoration-2 decoration-nb-brand-strong`}
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
-          <li
-            className={`${active === "Resume" ? "text-white" : "text-white"} hover:text-white text-[18px] font-medium cursor-pointer`}
-            onClick={() => setShowModal(true)}
-          >
-            Resume
+          <li>
+            <button
+              onClick={() => setShowModal(true)}
+              className='font-sans font-semibold text-[14px] text-nb-heading bg-nb-brand border-2 border-nb-border shadow-nb-sm px-4 py-2 rounded-none transition-all duration-100 hover:-translate-x-px hover:-translate-y-px hover:shadow-nb-md active:translate-x-[2px] active:translate-y-[2px] active:shadow-nb-2xs'
+            >
+              Resume
+            </button>
           </li>
         </ul>
 
         {/* Mobile Menu Icon */}
-        <div className='sm:hidden flex items-center menu-toggle'>
-          <img
-            src={toggle ? close : menu}
-            alt='menu'
-            className='w-[28px] h-[28px] object-contain'
-            onClick={() => setToggle(!toggle)}
-          />
-        </div>
+        <button
+          aria-label={toggle ? 'Close menu' : 'Open menu'}
+          className='sm:hidden flex items-center justify-center w-10 h-10 border-2 border-nb-border bg-nb-bg shadow-nb-xs rounded-none menu-toggle'
+          onClick={() => setToggle(!toggle)}
+        >
+          {toggle ? (
+            <svg width="16" height="16" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L17 17M17 1L1 17" stroke="#000000" strokeWidth="2.5" strokeLinecap="round" />
+            </svg>
+          ) : (
+            <svg width="18" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 1H20M0 7H20M0 13H20" stroke="#000000" strokeWidth="2.5" strokeLinecap="round" />
+            </svg>
+          )}
+        </button>
 
         {/* Mobile Menu Dropdown */}
         {toggle && (
           <div
-            className='black-gradient absolute top-full right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl p-6 flex flex-col gap-4 items-start mobile-menu'
-            style={{ position: 'absolute' }}
+            className='bg-nb-bg border-2 border-nb-border shadow-nb-lg absolute top-full right-0 mx-4 my-2 min-w-[160px] z-10 p-6 flex flex-col gap-4 items-start mobile-menu rounded-none'
           >
             {navLinks.map((nav) => (
               <a
                 key={nav.id}
                 href={`#${nav.id}`}
-                className={`text-[16px] ${active === nav.title ? "text-white" : "text-secondary"} font-medium cursor-pointer`}
+                className={`font-sans text-[16px] font-semibold text-nb-heading cursor-pointer hover:underline underline-offset-4 decoration-2 decoration-nb-brand-strong`}
                 onClick={() => {
                   setToggle(false);
                   setActive(nav.title);
@@ -132,7 +127,7 @@ const Navbar = () => {
               </a>
             ))}
             <span
-              className={`text-[16px] ${active === "Resume" ? "text-white" : "text-secondary"} font-medium cursor-pointer`}
+              className={`font-sans text-[16px] font-semibold text-nb-heading cursor-pointer hover:underline underline-offset-4 decoration-2 decoration-nb-brand-strong`}
               onClick={() => {
                 setToggle(false);
                 setShowModal(true);
@@ -145,18 +140,22 @@ const Navbar = () => {
 
         {/* Modal for selecting resume type to download */}
         {showModal && (
-          <div ref={modalRef} style={{
-            position: 'fixed',
-            top: '50%',
-            left: '50%',
-            transform: 'translate(-50%, -50%)',
-            backgroundColor: 'rgba(0,0,0,0.85)',
-            padding: '20px',
-            borderRadius: '10px',
-            zIndex: 1000
-          }}>
-            <button onClick={() => handleResumeDownload('ai')} style={{ display: 'block', width: '100%', padding: '10px', marginBottom: '10px', cursor: 'pointer' }}>Download Resume</button>
-            <button onClick={() => handleResumeDownload('cv')} style={{ display: 'block', width: '100%', padding: '10px', cursor: 'pointer' }}>Download Cover Letter</button>
+          <div
+            ref={modalRef}
+            className='fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-nb-bg border-2 border-nb-border shadow-nb-xl p-6 z-[1000] rounded-none flex flex-col gap-3 min-w-[260px]'
+          >
+            <button
+              onClick={() => handleResumeDownload('ai')}
+              className='w-full font-sans font-semibold text-[14px] text-nb-heading bg-nb-brand border-2 border-nb-border shadow-nb-sm px-4 py-2.5 rounded-none transition-all duration-100 hover:-translate-x-px hover:-translate-y-px hover:shadow-nb-md active:translate-x-[2px] active:translate-y-[2px] active:shadow-nb-2xs'
+            >
+              Download Resume
+            </button>
+            <button
+              onClick={() => handleResumeDownload('cv')}
+              className='w-full font-sans font-semibold text-[14px] text-nb-heading bg-nb-bg border-2 border-nb-border shadow-nb-sm px-4 py-2.5 rounded-none transition-all duration-100 hover:-translate-x-px hover:-translate-y-px hover:shadow-nb-md active:translate-x-[2px] active:translate-y-[2px] active:shadow-nb-2xs'
+            >
+              Download Cover Letter
+            </button>
           </div>
         )}
       </div>

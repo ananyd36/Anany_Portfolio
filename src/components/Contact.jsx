@@ -6,6 +6,9 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
+const inputClass =
+  "bg-nb-bg py-2.5 px-3 placeholder:text-nb-body text-nb-heading border-2 border-nb-border shadow-nb-xs outline-none rounded-none font-sans text-[14px] transition-all duration-150 focus:shadow-nb-sm";
+
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -52,13 +55,13 @@ const Contact = () => {
     }
 
     , (error) => {
-      setLoading(false) 
+      setLoading(false)
 
       console.log(error.text);
 
       alert('Something went wrong. Please try again later!');
     }
-  
+
   )
 
   }
@@ -72,71 +75,70 @@ const Contact = () => {
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className='flex-[1] bg-black-100 p-8 rounded-2xl'
+        className='flex-[1] bg-nb-bg border-2 border-nb-border shadow-nb-md rounded-none p-8'
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact me </h3>
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className='mt-12 flex flex-col gap-8'
+          className='mt-12 flex flex-col gap-6'
         >
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Name</span>
+          <label className='flex flex-col' htmlFor='contact-name'>
+            <span className='font-sans font-semibold text-nb-heading text-[14px] mb-2'>Your Name</span>
             <input
+              id='contact-name'
               type='text'
               name='name'
               value={form.name}
               onChange={handleChange}
               placeholder="What's your name?"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className={inputClass}
             />
           </label>
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your email</span>
+          <label className='flex flex-col' htmlFor='contact-email'>
+            <span className='font-sans font-semibold text-nb-heading text-[14px] mb-2'>Your email</span>
             <input
+              id='contact-email'
               type='email'
               name='email'
               value={form.email}
               onChange={handleChange}
               placeholder="What's your email?"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className={inputClass}
             />
           </label>
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Message</span>
+          <label className='flex flex-col' htmlFor='contact-message'>
+            <span className='font-sans font-semibold text-nb-heading text-[14px] mb-2'>Your Message</span>
             <textarea
+              id='contact-message'
               rows={7}
               name='message'
               value={form.message}
               onChange={handleChange}
               placeholder='What you want to say?'
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className={inputClass}
             />
           </label>
 
           <button
-          type="submit"
-          className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl text-center"
+            type="submit"
+            className="font-sans font-semibold text-[14px] text-nb-heading bg-nb-brand border-2 border-nb-border shadow-nb-sm px-6 py-2.5 w-fit rounded-none transition-all duration-100 hover:-translate-x-px hover:-translate-y-px hover:shadow-nb-md active:translate-x-[2px] active:translate-y-[2px] active:shadow-nb-2xs"
           >
             {loading ? "Sending..." : "Send"}
-
           </button>
 
           </form>
       </motion.div>
 
     </div>
-    
-    <br/>
 
-    {/* At the end */}
-    <div className='text-center text-white font-medium'>
+    <div className='mt-10 flex justify-center items-center gap-8'>
         <a
           href='https://www.linkedin.com/in/ananyd36/'
           target='_blank'
           rel='noopener noreferrer'
-          className='text-gray-300 hover:underline mx-4'
+          className='font-sans font-semibold text-nb-heading text-[14px] hover:underline underline-offset-4 decoration-2 decoration-nb-brand-strong'
         >
           LinkedIn
         </a>
@@ -144,7 +146,7 @@ const Contact = () => {
           href='https://github.com/ananyd36'
           target='_blank'
           rel='noopener noreferrer'
-          className='text-gray-300 hover:underline mx-4'
+          className='font-sans font-semibold text-nb-heading text-[14px] hover:underline underline-offset-4 decoration-2 decoration-nb-brand-strong'
         >
           GitHub
         </a>
@@ -152,17 +154,17 @@ const Contact = () => {
           href='https://www.instagram.com/anany__36/'
           target='_blank'
           rel='noopener noreferrer'
-          className='text-gray-300 hover:underline mx-4'
+          className='font-sans font-semibold text-nb-heading text-[14px] hover:underline underline-offset-4 decoration-2 decoration-nb-brand-strong'
         >
           Instagram
         </a>
       </div>
 
-    
+
     </>
   )
-  
-  
+
+
 }
 
-export default SectionWrapper(Contact, "contact");
+export default SectionWrapper(Contact, "contact", "bg-nb-bg-alt");
