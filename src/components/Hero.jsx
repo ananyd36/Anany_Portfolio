@@ -49,6 +49,9 @@ const badgePills = [
   "AI Engineer",
   "MS AI Systems @ UF",
   "3+ Years Experience",
+  "Production RAG",
+  "AWS Full Infra",
+  "Azure",
 ];
 
 const Hero = () => {
@@ -60,57 +63,59 @@ const Hero = () => {
 
 
   return (
-    <section className="relative w-full min-h-screen bg-nb-brand border-b-2 border-nb-border flex items-center pt-24 pb-20">
+    <section className="relative w-full min-h-screen bg-nb-hero-bg border-b-2 border-nb-border flex items-center pt-24 pb-20">
       <div className={`max-w-7xl mx-auto w-full ${styles.paddingX}`}>
-        <div className="flex flex-wrap gap-2 mb-6">
-          {badgePills.map((pill) => (
-            <span
-              key={pill}
-              className="font-sans font-semibold text-[12px] uppercase tracking-wide bg-nb-heading text-white border-2 border-nb-border px-3 py-1 rounded-none"
+        <div className="max-w-2xl">
+          <div className="flex flex-wrap gap-2 mb-6">
+            {badgePills.map((pill) => (
+              <span
+                key={pill}
+                className="font-sans font-semibold text-[12px] uppercase tracking-wide bg-nb-heading text-white border-2 border-nb-border px-3 py-1 rounded-none"
+              >
+                {pill}
+              </span>
+            ))}
+          </div>
+
+          <h1 className={styles.heroHeadText}>Hi, I&apos;m Anany</h1>
+          <TypewriterText texts={textOptions} />
+
+          <p className="mt-5 max-w-xl font-sans text-nb-heading text-[16px] sm:text-[18px] leading-[1.6]">
+            I build agentic AI, fine-tuned LLMs, and Edge AI systems &mdash; MS in Artificial
+            Intelligence Systems @ University of Florida.
+          </p>
+
+          <div className="mt-8 flex flex-wrap items-center gap-3">
+            <a
+              href={resumePdf}
+              download="Anany_Sharma_Resume.pdf"
+              className="font-sans font-semibold text-[14px] text-white bg-nb-heading border-2 border-nb-border shadow-nb-sm px-5 py-2.5 rounded-none transition-all duration-100 hover:-translate-x-px hover:-translate-y-px hover:shadow-nb-md active:translate-x-[2px] active:translate-y-[2px] active:shadow-nb-2xs"
             >
-              {pill}
-            </span>
-          ))}
-        </div>
-
-        <h1 className={styles.heroHeadText}>Hi, I&apos;m Anany</h1>
-        <TypewriterText texts={textOptions} />
-
-        <p className="mt-5 max-w-xl font-sans text-nb-heading text-[16px] sm:text-[18px] leading-[1.6]">
-          I build production LLM, RAG, and Edge AI systems &mdash; MS in Artificial
-          Intelligence Systems @ University of Florida.
-        </p>
-
-        <div className="mt-8 flex flex-wrap items-center gap-3">
-          <a
-            href={resumePdf}
-            download="Anany_Sharma_Resume.pdf"
-            className="font-sans font-semibold text-[14px] text-white bg-nb-heading border-2 border-nb-border shadow-nb-sm px-5 py-2.5 rounded-none transition-all duration-100 hover:-translate-x-px hover:-translate-y-px hover:shadow-nb-md active:translate-x-[2px] active:translate-y-[2px] active:shadow-nb-2xs"
-          >
-            Download Resume
-          </a>
-          <a
-            href="https://www.linkedin.com/in/ananyd36/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-sans font-semibold text-[14px] text-nb-heading bg-nb-bg border-2 border-nb-border shadow-nb-sm px-5 py-2.5 rounded-none transition-all duration-100 hover:-translate-x-px hover:-translate-y-px hover:shadow-nb-md active:translate-x-[2px] active:translate-y-[2px] active:shadow-nb-2xs"
-          >
-            LinkedIn
-          </a>
-          <a
-            href="https://github.com/ananyd36"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-sans font-semibold text-[14px] text-nb-heading bg-nb-bg border-2 border-nb-border shadow-nb-sm px-5 py-2.5 rounded-none transition-all duration-100 hover:-translate-x-px hover:-translate-y-px hover:shadow-nb-md active:translate-x-[2px] active:translate-y-[2px] active:shadow-nb-2xs"
-          >
-            GitHub
-          </a>
-          <a
-            href="mailto:anany.sharma.ufl@gmail.com"
-            className="font-sans font-semibold text-[14px] text-nb-heading bg-nb-bg border-2 border-nb-border shadow-nb-sm px-5 py-2.5 rounded-none transition-all duration-100 hover:-translate-x-px hover:-translate-y-px hover:shadow-nb-md active:translate-x-[2px] active:translate-y-[2px] active:shadow-nb-2xs"
-          >
-            Email
-          </a>
+              Download Resume
+            </a>
+            <a
+              href="https://www.linkedin.com/in/ananyd36/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-sans font-semibold text-[14px] text-nb-heading bg-nb-bg border-2 border-nb-border shadow-nb-sm px-5 py-2.5 rounded-none transition-all duration-100 hover:-translate-x-px hover:-translate-y-px hover:shadow-nb-md active:translate-x-[2px] active:translate-y-[2px] active:shadow-nb-2xs"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="https://github.com/ananyd36"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-sans font-semibold text-[14px] text-nb-heading bg-nb-bg border-2 border-nb-border shadow-nb-sm px-5 py-2.5 rounded-none transition-all duration-100 hover:-translate-x-px hover:-translate-y-px hover:shadow-nb-md active:translate-x-[2px] active:translate-y-[2px] active:shadow-nb-2xs"
+            >
+              GitHub
+            </a>
+            <a
+              href="mailto:anany.sharma.ufl@gmail.com"
+              className="font-sans font-semibold text-[14px] text-nb-heading bg-nb-bg border-2 border-nb-border shadow-nb-sm px-5 py-2.5 rounded-none transition-all duration-100 hover:-translate-x-px hover:-translate-y-px hover:shadow-nb-md active:translate-x-[2px] active:translate-y-[2px] active:shadow-nb-2xs"
+            >
+              Email
+            </a>
+          </div>
         </div>
       </div>
 

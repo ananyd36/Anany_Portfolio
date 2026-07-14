@@ -42,6 +42,9 @@ import {
     azure,
     rag,
     vectordb,
+    finetuning,
+    languageModeling,
+    llmTraining,
   } from "../assets";
   
   export const navLinks = [
@@ -84,6 +87,9 @@ import {
   
   const technologies = [
     { name: "Generative AI", icon: Openai },
+    { name: "LLM Training", icon: llmTraining },
+    { name: "Fine-tuning", icon: finetuning },
+    { name: "Language Modeling", icon: languageModeling },
     { name: "PyTorch", icon: pytorch },
     { name: "TensorFlow", icon: tensorflow },
     { name: "RAG", icon: rag },
@@ -110,11 +116,11 @@ import {
   
   const experiences = [
     {
-      title: "AI Research Fellow",
+      title: "AI Research Fellow (NSF Funded)",
       company_name: "University of Florida",
       icon: UF,
       iconBg: "#383E56",
-      date: "February 2025 - Present",
+      date: "March 2025 - Present",
       points: [
         "Engineered an SLM on Jetson Orin, with a model footprint of 96MBs, exported using ONNX runtime and TensorRT",
         "Optimized training/inference by KV Cache, mixed precision training, flash attention achieving 70T/s with 2.44ms TTFT",
@@ -130,13 +136,13 @@ import {
       date: "Aug 2025 - April 2026",
       points: [
         "Built a RAG system on Azure, with hybrid search (semantic+BM25), reranking, query expansion for retrieval accuracy",
-        "Created ingestion pipelines to sync Azure VM (F: Drive) data into embedded vectorized records into Azure PostgreSQL",
-        "Designed an LLM evaluation framework using DeepEval, integrating unit tests, LLM-as-a-Judge scoring, and A/B testing",
+        "Created custom ingestion pipelines to sync Azure VM (F: Drive) data into embedded vectorized records into CosmosDB",
+        "Designed an LLM evaluation framework with DeepEval, integrating unit tests, LLM-as-a-Judge scoring and user testing",
         "Achieved .74 Recall@Top10, .78 NDCG@Top10 with an F1 Score of .82 across all failure mode in DeepEval evaluation"
       ],
     },
     {
-      title: "Software Engineer - Data & AI",
+      title: "Software Engineer - Data/AI",
       company_name: "United Health Group",
       icon: UHG,
       iconBg: "#E6DEDD",
@@ -162,15 +168,15 @@ import {
       ],
     },
     {
-      title: "Machine Learning Engineer Intern",
+      title: "Machine Learning Engineering Intern",
       company_name: "MFIT Technologies",
       icon: mfit,
       iconBg: "#383E56",
       date: "July 2020 - Nov 2020",
       points: [
-        "Developed an OCR/NLP enabled financial data system with 85% field-extraction accuracy for transaction monitoring ",
+        "Developed an OCR/NLP enabled financial data system with 85% field-extraction accuracy for transaction monitoring",
         "Engineered document extraction system supporting 10+ formats using hybrid NER and layout-aware frameworks",
-        "Built dynamic Conditional Random Field  plus Spatial model to parse financial statements across 4 major banks",
+        "Built dynamic Conditional Random Field plus Spatial model to parse financial statements across 4 major banks",
       ],
     },
   ];

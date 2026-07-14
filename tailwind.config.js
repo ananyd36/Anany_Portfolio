@@ -10,6 +10,7 @@ export const theme = {
       "nb-brand": "#FFDB33",
       "nb-brand-strong": "#FFCC00",
       "nb-brand-soft": "#FFF3C4",
+      "nb-hero-bg": "#FDECA8",
       "nb-heading": "#000000",
       "nb-body": "#5A5A5A",
       "nb-border": "#000000",

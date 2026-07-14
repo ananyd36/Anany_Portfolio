@@ -28,6 +28,9 @@ import aws from "./tech/aws.svg";
 import azure from "./tech/azure.svg";
 import rag from "./tech/rag.svg";
 import vectordb from "./tech/vectordb.svg";
+import finetuning from "./tech/finetuning.svg";
+import languageModeling from "./tech/language-modeling.svg";
+import llmTraining from "./tech/llm-training.svg";
 
 import UF from "./company/UF.png";
 import UHG from "./company/UHG.png";
@@ -85,6 +88,9 @@ export {
   azure,
   rag,
   vectordb,
+  finetuning,
+  languageModeling,
+  llmTraining,
   UF,
   SmireAI,
   Coras,
