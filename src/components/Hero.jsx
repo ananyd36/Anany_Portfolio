@@ -50,8 +50,8 @@ const badgePills = [
   "MS AI Systems @ UF",
   "3+ Years Experience",
   "Production RAG",
-  "AWS Full Infra",
   "Azure",
+  "AWS",
 ];
 
 const Hero = () => {
