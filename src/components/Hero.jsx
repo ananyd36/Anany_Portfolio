@@ -81,7 +81,7 @@ const Hero = () => {
           <TypewriterText texts={textOptions} />
 
           <p className="mt-5 max-w-xl font-sans text-nb-heading text-[16px] sm:text-[18px] leading-[1.6]">
-            I build agentic AI, fine-tuned LLMs, and Edge AI systems &mdash; MS in Artificial
+            I build agentic AI, RAG, fine-tuned LLMs, and Edge AI systems &mdash; MS in Artificial
             Intelligence Systems @ University of Florida.
           </p>
 

@@ -11,8 +11,7 @@ function HOC(){
         <motion.section
         variants={staggerContainer()}
         initial='hidden'
-        whileInView='show'
-        viewport={{ once: true, amount: 0.25 }}
+        animate='show'
         className={`${styles.padding} max-w-7xl mx-auto`}
       >
       <span className='hash-span' id={idName}>
